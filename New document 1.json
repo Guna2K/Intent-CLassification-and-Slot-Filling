@@ -1,0 +1,69 @@
+{
+  "1": {
+      
+        "text": "i want to fly from boston at 838 am and arrive in denver at 1110 in the morning",
+        "intent": "flight",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "boston",
+            "entity": "fromloc.city_name"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "value": "838 am",
+            "entity": "depart_time.time"
+          },
+          {
+            "start": 50,
+            "end": 56,
+            "value": "denver",
+            "entity": "toloc.city_name"
+          },
+          {
+            "start": 60,
+            "end": 64,
+            "value": "1110",
+            "entity": "arrive_time.time"
+          },
+          {
+            "start": 72,
+            "end": 79,
+            "value": "morning",
+            "entity": "arrive_time.period_of_day"
+          }
+        ]
+  },
+  "2":{
+                "text": "what flights are available from pittsburgh to baltimore on thursday morning",
+                "intent": "flight",
+                "entities": [
+                    {
+                        "start": 32,
+                        "end": 42,
+                        "value": "pittsburgh",
+                        "entity": "fromloc.city_name"
+                    },
+                    {
+                        "start": 46,
+                        "end": 55,
+                        "value": "baltimore",
+                        "entity": "toloc.city_name"
+                    },
+                    {
+                        "start": 59,
+                        "end": 67,
+                        "value": "thursday",
+                        "entity": "depart_date.day_name"
+                    },
+                    {
+                        "start": 68,
+                        "end": 75,
+                        "value": "morning",
+                        "entity": "depart_time.period_of_day"
+                    }
+                ]
+            }
+}
